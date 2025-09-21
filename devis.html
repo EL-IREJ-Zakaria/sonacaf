@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demande de devis - SONACAF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="devis-form-container">
+        <h2>Demandez votre devis gratuit</h2>
+        <form id="devis-form" action="process_form.php" method="POST">
+            <div class="form-group">
+                <input type="text" id="nom" name="nom" placeholder="Nom" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="number" id="annee_naissance" name="annee_naissance" placeholder="Année de naissance" required min="1900">
+            </div>
+            
+            <div class="form-group">
+                <input type="text" id="code_postal" name="code_postal" placeholder="Code postal" required pattern="[0-9]{5}">
+            </div>
+            
+            <div class="form-group">
+                <input type="tel" id="telephone" name="telephone" placeholder="Téléphone" required pattern="(0|\+33)[1-9][0-9]{8}">
+            </div>
+            
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            
+            <div class="form-group">
+                <select id="service" name="service" required>
+                    <option value="">Sélectionnez le type d'assurance</option>
+                    <option value="Assurance Santé">Assurance Santé</option>
+                    <option value="Mutuelle">Mutuelle</option>
+                    <option value="Assurance Auto">Assurance Auto</option>
+                    <option value="Assurance Habitation">Assurance Habitation</option>
+                    <option value="Assurance Vie">Assurance Vie</option>
+                    <option value="Assurance Professionnelle">Assurance Professionnelle</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <textarea id="message" name="message" placeholder="Votre message" rows="4" required></textarea>
+            </div>
+            
+            <div class="form-group checkbox">
+                <input type="checkbox" id="rgpd" name="rgpd" required>
+                <label for="rgpd">J'accepte que mes données soient traitées conformément à la politique de confidentialité RGPD</label>
+            </div>
+            
+            <button type="submit" class="btn-primary">Mon devis gratuit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html><?php
+define('SMTP_USERNAME', 'elleirejzakaria@gmail.com');
+define('SMTP_PASSWORD', 'ton_mot_de_passe_d_application');<?php
+define('SMTP_USERNAME', 'elleirejzakaria@gmail.com');
+define('SMTP_PASSWORD', 'ton_mot_de_passe_d_application');

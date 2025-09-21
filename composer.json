@@ -1,0 +1,6 @@
+{
+    "name": "sonacaf/website",
+    "require": {
+        "phpmailer/phpmailer": "*"
+    }
+}

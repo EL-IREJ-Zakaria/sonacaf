@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SONACAF - Contactez notre équipe de courtage d'assurance">
+    <title>Contact - SONACAF</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header fixe -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.php">SONACAF</a>
+            </div>
+            <nav>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="menu">
+                    <li><a href="index.php">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page title -->
+    <section class="page-title">
+        <div class="container">
+            <h1>Contactez-nous</h1>
+            <p>Notre équipe est à votre disposition pour répondre à toutes vos questions</p>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Nos coordonnées</h2>
+            <div class="contact-info">
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <p>123 Avenue des Assurances, 75000 Paris</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <p>+33 1 23 45 67 89</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <p>contact@sonacaf.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <p>Lun-Ven: 9h-18h | Sam: 9h-12h</p>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <h3 class="social-media-title">Suivez-nous</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">TW</a>
+                        <a href="#" class="social-icon">LI</a>
+                        <a href="#" class="social-icon">IG</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulaire de contact -->
+    <section class="contact-form-section">
+        <div class="container">
+            <h2>Envoyez-nous un message</h2>
+            <div class="form-container">
+                <form id="contact-form" action="process_form.php" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="code_postal" name="code_postal" placeholder="Code postal" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="telephone" name="telephone" placeholder="Téléphone" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Adresse email" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected>Objet de votre demande</option>
+                            <option value="assurance_auto">Assurance Auto</option>
+                            <option value="assurance_habitation">Assurance Habitation</option>
+                            <option value="assurance_sante">Assurance Santé</option>
+                            <option value="assurance_vie">Assurance Vie</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="rgpd" name="rgpd" required>
+                        <label for="rgpd">J'accepte que mes données soient traitées conformément à la politique de confidentialité RGPD</label>
+                    </div>
+                    <div class="form-group g-recaptcha" data-sitekey="VOTRE_CLE_SITE_RECAPTCHA"></div>
+                    <div class="form-group">
+                        <button type="submit" class="btn-primary">Envoyer</button>
+                    </div>
+                    <div id="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Map -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Nous trouver</h2>
+            <div class="map-container">
+                <!-- Remplacer par une vraie carte Google Maps -->
+                <div class="map-placeholder" style="background-color: #e5e7eb; height: 400px; display: flex; align-items: center; justify-content: center;">
+                    <p>Carte Google Maps ici</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>SONACAF</h3>
+                    <p>Votre courtier d'assurance de confiance</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="index.php">Accueil</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Nos services</h4>
+                    <ul>
+                        <li>Assurance Auto</li>
+                        <li>Assurance Habitation</li>
+                        <li>Assurance Santé</li>
+                        <li>Assurance Vie</li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Inscrivez-vous pour recevoir nos actualités</p>
+                    <form>
+                        <input type="email" placeholder="Votre email">
+                        <button type="submit">S'inscrire</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SONACAF. Tous droits réservés.</p>
+                <div class="legal-links">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">CGU</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
